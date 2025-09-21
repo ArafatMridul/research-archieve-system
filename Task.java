@@ -1,6 +1,7 @@
 interface ResearchPaper {
     void view();
     String getAuthorName();
+    String getPublicationYear();
 }
 
 final class FullResearchPaper implements ResearchPaper {
@@ -16,6 +17,9 @@ final class FullResearchPaper implements ResearchPaper {
     @Override
     public String getAuthorName() {
         return "Author";
+    }
+    public String getPublicationYear() {
+        return "2025";
     }
 }
 
@@ -36,6 +40,9 @@ class FullOnView implements ResearchPaper {
     @Override
     public String getAuthorName() {
         return "Author";
+    }
+    public String getPublicationYear() {
+        return "2025";
     }
 }
 
