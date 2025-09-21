@@ -52,5 +52,7 @@ public class Task {
         
         FullOnView fov = new FullOnView(frp);
         fov.view();
+        fov.getAuthorName();
+        fov.getPublicationYear();
     }
 }
