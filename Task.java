@@ -1,5 +1,6 @@
 interface ResearchPaper {
     void view();
+    String getPublicationYear();
 }
 
 final class FullResearchPaper implements ResearchPaper {
@@ -10,6 +11,11 @@ final class FullResearchPaper implements ResearchPaper {
     @Override 
     public void view() {
         System.out.print("FULL PDF");
+    }
+
+    @Override
+    public String getPublicationYear() {
+        return "2025";
     }
 }
 
@@ -25,6 +31,11 @@ class FullOnView implements ResearchPaper {
         System.out.println();
         researchPaper.view();
         System.out.println(" By calling view()");
+    }
+
+    @Override
+    public String getPublicationYear() {
+        return "2025";
     }
 }
 
